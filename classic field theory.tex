@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\pagenumbering{roman}
+\title{classic field theory}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\textbf{classic field theory}\\
+\textbf{At first}\\
+Use Einstein summation convention \\
+Define $ y_{,x}=\frac{\partial y}{\partial x} $\\
+\textbf{Part I.static electric field}\\
+$$ S=\int \Lambda(\phi,\frac{\partial \phi}{\partial x^i}) dV $$
+$$ \delta S + S= \int \Lambda(\phi+\delta \phi,\frac{\partial \phi}{\partial x^i}\frac{\partial \delta \phi}{\partial x^i}) dV $$
+$$ \delta S = \int \frac{\partial \Lambda}{\partial \phi}\delta \phi+\frac {\partial \Lambda}{\partial \phi_{,i}}\delta \phi_{,i}dV $$
+And from:\\
+$$ \int \frac{\partial \Lambda}{\phi_{,i}} \delta \phi_{,i}dV=\int \frac{\partial}{\partial x^i}(\frac{\partial\Lambda}{\partial \phi_{,i}}\delta \phi - \delta \phi \frac{\partial}{\partial x^i}\frac{\partial \Lambda}{\partial \phi_{,i})}dV $$
+$$ \frac{\partial}{\partial x^i}(\frac{\partial \Lambda}{\partial \phi_{,i}}\delta \phi)=\nabla(\frac{\partial \Lambda}{\partial \phi_{,i}}\delta \phi) $$
+Use Gauss divergence theorem,we find that: \\
+$$ \delta S =\int \frac{\partial \Lambda}{\phi}\delta \phi-\frac{\partial \Lambda}{\phi_{,i}}\delta \phi dV $$
+$$ \frac{\partial}{\partial x^i}\frac{\partial \Lambda}{\partial \phi_{,i}}=\frac{\partial \Lambda}{\partial \phi}$$
+For static electric field:\\
+$$ E=\phi_{,i}x^i $$
+$$ \nabla \cdot E=\rho (\epsilon_0=1)$$
+$$ \Lambda=\rho \phi + \frac{1}{2} E^2 $$
+$$ (E=\nabla \phi) $$
+So $\int \rho \phi + \frac{1}{2}E^2 dV \quad is \quad minimized$\\
+\end{CJK}
+\end{document}
+
